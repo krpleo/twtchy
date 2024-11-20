@@ -1,0 +1,10 @@
+{
+  "extends": "@twtchy/tsconfig/library.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "preserve",
+    "moduleResolution": "bundler"
+  },
+  "include": ["./*.ts"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@twtchy/handl",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "hono": "^4.6.11",
+    "hono-pino": "^0.7.0",
+    "pino": "^9.5.0",
+    "pino-pretty": "^13.0.0"
+  },
+  "devDependencies": {
+    "@twtchy/env": "workspace:*",
+    "@twtchy/tsconfig": "workspace:*",
+    "@types/node": "22.9.0",
+    "typescript": "^5.6.3"
+  }
+}
