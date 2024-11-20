@@ -17,6 +17,7 @@ export default antfu({
     'node/prefer-global/process': ['off'],
     'node/no-process-env': ['error'],
     'style/comma-dangle': ['error', 'never'],
-    'style/object-curly-spacing': ['error', 'never']
+    'style/object-curly-spacing': ['error', 'never'],
+    'antfu/top-level-function': ['off']
   }
 })
