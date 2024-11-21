@@ -10,8 +10,8 @@ const EnvSchema = z.object({
   LOG_LEVEL: z.enum(['fatal', 'error', 'warn', 'trace', 'debug', 'info']).default('info'),
   PORT: z.coerce.number().default(6969),
   TWTCHY_API_KEY: z.string().startsWith('twtchy_'),
-  VAL_API_KEY: z.string()
-})
+  VAL_API_KEY: z.string().optional()
+}).refine(env => env.NODE_ENV === 'production' ? !!env.VAL_API_KEY : true)
 
 export type TwtchyEnv = z.infer<typeof EnvSchema>
 
