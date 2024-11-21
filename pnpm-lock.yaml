@@ -58,6 +58,12 @@ importers:
         specifier: ^4.5.5
         version: 4.9.5
 
+  apps/docs:
+    devDependencies:
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
+
   packages/env:
     dependencies:
       dotenv:
