@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "@hono/zod-openapi": "^0.18.0",
     "hono": "^4.6.11",
     "hono-pino": "^0.7.0",
     "pino": "^9.5.0",
