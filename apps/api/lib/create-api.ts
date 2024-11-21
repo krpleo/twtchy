@@ -1,6 +1,6 @@
 import type {Logger} from '@twtchy/handl'
 import {OpenAPIHono} from '@hono/zod-openapi'
-import {authenticate, errorHandler, logger, notFoundHandler} from '@twtchy/handl'
+import {authenticate, defaultHook, errorHandler, logger, notFoundHandler} from '@twtchy/handl'
 
 export interface ApiBindings {
   Variables: {
@@ -8,7 +8,7 @@ export interface ApiBindings {
   }
 }
 
-export const createRouter = () => new OpenAPIHono<ApiBindings>({strict: false})
+export const createRouter = () => new OpenAPIHono<ApiBindings>({strict: false, defaultHook})
 
 const createApi = () => {
   const api = createRouter()
