@@ -12,7 +12,7 @@
     "bump-deps": "npx npm-check-updates --deep -u && pnpm install"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.9.2",
+    "@antfu/eslint-config": "^3.11.2",
     "@twtchy/tsconfig": "workspace:*",
     "eslint": "^9.15.0",
     "eslint-plugin-format": "^0.1.2",
